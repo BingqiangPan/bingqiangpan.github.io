@@ -3,25 +3,34 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+#- type: twitter
+# icon: "fa-brands fa-x-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+#- type: email
+#  icon: "fas fa-envelope"
+#  noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
+#- type: rss
+#  icon: "fas fa-rss"
+#  noblank: true
+
+- type: google scholar
+  icon: "fa-brands fa-google-scholar"
   noblank: true
+  url: 'https://scholar.google.com/citations?user=48KgGCkAAAAJ&hl=en'
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
+- type: CV
+  icon: 'fa-solid fa-file-pdf'   # icons powered by <https://fontawesome.com/>
+  url:  '/assets/files/CV.pdf' 
+
+- type: linkedin
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/bingqiang-pan-47a054333/'     # Fill with your Linkedin homepage
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'

@@ -25,3 +25,9 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# 补充：macOS 系统 & 本地脚本文件
+.DS_Store
+run.sh
+publish.sh
+*.log
