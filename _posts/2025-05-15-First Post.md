@@ -1,7 +1,7 @@
 ---
 title: First Post
 author: B. Pan
-date: 2025-05-17 21:45:00 +0100
+date: 2025-05-17 21:45:00 +0200
 categories: [Blogging]
 tags: [General]
 pin: false
