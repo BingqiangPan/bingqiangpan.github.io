@@ -16,8 +16,9 @@ This project is based on the [Chirpy theme](https://github.com/cotes2020/jekyll-
 
 ## 📄 Content License
 
-All original content on this site — including articles, posts, and images — is © Bingqiang Pan and licensed under the  
-**Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**.
+All original content on this site — including blog posts, articles, and images — is © Bingqiang Pan and licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-Please do not reuse or reproduce content without permission.
+[![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+> If you wish to use the content beyond the scope of this license, please contact me for permission.
 
