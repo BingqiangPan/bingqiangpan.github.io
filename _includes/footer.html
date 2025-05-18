@@ -1,0 +1,39 @@
+<!-- The Footer -->
+
+<footer
+  aria-label="Site Info"
+  class="
+    d-flex flex-column justify-content-center text-muted
+    flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
+  "
+>
+<p>
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+    <img alt="Creative Commons License" style="height: 20px; vertical-align: middle; margin-right: 6px; border-width: 0;" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" />
+  </a>
+  © {{ 'now' | date: '%Y' }} <strong>Bingqiang Pan</strong>.  
+  All content is licensed under 
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">
+    CC BY-NC-ND 4.0
+  </a>.
+</p>
+
+  <p>
+    {%- capture _platform -%}
+      <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+    {%- endcapture -%}
+
+    {%- capture _theme -%}
+      <a
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="v{{ theme.version }}"
+        href="https://github.com/cotes2020/jekyll-theme-chirpy"
+        target="_blank"
+        rel="noopener"
+      >Chirpy</a>
+    {%- endcapture -%}
+
+    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+  </p>
+</footer>
