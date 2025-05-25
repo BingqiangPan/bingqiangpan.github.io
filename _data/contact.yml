@@ -1,7 +1,7 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
+# - type: github
+#   icon: "fab fa-github"
 
 #- type: twitter
 # icon: "fa-brands fa-x-twitter"
@@ -28,9 +28,16 @@
   icon: 'fa-solid fa-file-pdf'   # icons powered by <https://fontawesome.com/>
   url:  '/assets/files/CV.pdf' 
 
+- type: bilibili
+  icon: 'fa-brands fa-bilibili'   # icons powered by <https://fontawesome.com/>
+  url:  'https://space.bilibili.com/435178796?spm_id_from=333.1387.0.0'
+
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/bingqiang-pan-47a054333/'     # Fill with your Linkedin homepage
+#
+
+
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
