@@ -24,9 +24,9 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-- type: CV
-  icon: 'fa-solid fa-file-pdf'   # icons powered by <https://fontawesome.com/>
-  url:  '/assets/files/CV.pdf' 
+# - type: CV
+#   icon: 'fa-solid fa-file-pdf'   # icons powered by <https://fontawesome.com/>
+#   url:  '/assets/files/CV.pdf' 
 
 - type: bilibili
   icon: 'fa-brands fa-bilibili'   # icons powered by <https://fontawesome.com/>
