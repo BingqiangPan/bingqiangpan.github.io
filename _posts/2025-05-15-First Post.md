@@ -2,8 +2,8 @@
 title: First Post
 author: B. Pan
 date: 2025-05-17 21:45:00 +0200
-categories: [Blog]
-tags: [General]
+categories: [Essays]
+tags: [GitHub, Writing]
 pin: false
 ---
 
