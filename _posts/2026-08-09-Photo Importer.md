@@ -16,7 +16,7 @@ pin: false
 
 于是，我开始了这次和 Codex 的 vibe coding 过程。之前我也尝试过让 ChatGPT 帮我写 ImageJ 的自动化脚本，所以我知道，只要模型能够理解需求，并且具备调用本地文件和系统工具的能力，这类个人工作流自动化其实是可以实现的。经过几轮需求补充、测试和修正，最后得到了现在这个对我来说已经可用的 macOS 照片导入脚本。这个工具不是 Lightroom，也不是 FreeFileSync，而是把我自己长期以来的照片导入习惯和偏好固化成了一个小工具。下面是打包的文件和demo视频。
 
-[Download Photo Importer v3.3](/assets/files/photo-importer-for-macos/v3.3/photo-importer-v3.3.zip) 
+[Download Photo Importer v3.3](/assets/files/Photo Importer for macos/v3.3/Photo Importer v3.3.zip) 
 
 <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 1.5rem 0;">
   <iframe
@@ -28,4 +28,3 @@ pin: false
     allowfullscreen>
   </iframe>
 </div>
-
