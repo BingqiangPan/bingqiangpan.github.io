@@ -77,18 +77,25 @@ Files moved there are either:
 
 Failed files are not archived. Future scans skip `archive/`.
 
-## macOS Warning
+## macOS Download Permission
 
-If macOS says it cannot verify the script, remove the quarantine flag:
+If macOS says the script cannot be opened because it cannot be verified, remove the download quarantine flag:
 
 ```sh
 xattr -d com.apple.quarantine ~/Desktop/Photo\ Importer\ v3.4.command
 ```
 
-If the file is elsewhere:
+If macOS says the script cannot be executed because you do not have appropriate access privileges, restore execute permission:
+
+```sh
+chmod +x ~/Desktop/Photo\ Importer\ v3.4.command
+```
+
+If the file is elsewhere, replace the path:
 
 ```sh
 xattr -d com.apple.quarantine "/path/to/Photo Importer v3.4.command"
+chmod +x "/path/to/Photo Importer v3.4.command"
 ```
 
 You can also right-click the file in Finder, choose `Open`, then confirm.
@@ -111,6 +118,11 @@ brew install exiftool
 ## Version History
 
 ### v3.4
+
+- Rename the release file to `Photo Importer v3.4.command`.
+- Update the internal version number to `3.4`.
+
+### v3.3.1
 
 - Fix first-run SQLite initialization on some exFAT external drives.
 
