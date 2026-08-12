@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-VERSION="3.3"
+VERSION="3.4"
 RESERVE_BYTES=$((5 * 1024 * 1024 * 1024))
 NO_DATE_FOLDER="_No Data"
 
@@ -224,8 +224,10 @@ init_paths() {
   mkdir -p "$DB_DIR"
 }
 
-init_db() {
-  sqlite3 "$DB_FILE" <<'SQL'
+init_db_schema() {
+  local db_path="$1"
+
+  sqlite3 "$db_path" <<'SQL'
 CREATE TABLE IF NOT EXISTS media_index (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   filename TEXT NOT NULL,
@@ -242,6 +244,32 @@ ON media_index(filename, size);
 CREATE INDEX IF NOT EXISTS idx_media_hash
 ON media_index(sha256);
 SQL
+}
+
+init_db() {
+  local tmp_db
+
+  if [[ -f "$DB_FILE" ]]; then
+    init_db_schema "$DB_FILE"
+    return
+  fi
+
+  # Create new SQLite databases locally first. Some exFAT external drives can
+  # create the file but fail during schema/index creation on the first run.
+  tmp_db="$(mktemp "${TMPDIR:-/tmp}/photo-index.XXXXXX.sqlite3")"
+  rm -f "$tmp_db"
+
+  if ! init_db_schema "$tmp_db"; then
+    rm -f "$tmp_db"
+    die "Cannot initialize SQLite index."
+  fi
+
+  if ! cp "$tmp_db" "$DB_FILE"; then
+    rm -f "$tmp_db"
+    die "Cannot write SQLite index to target folder."
+  fi
+
+  rm -f "$tmp_db"
 }
 
 # Safety guard: the importer must never scan its own target tree.

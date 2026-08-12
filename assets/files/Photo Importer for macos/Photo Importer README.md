@@ -36,7 +36,7 @@ source folder -> verified copy -> dated folders in target library
 Double-click:
 
 ```text
-Photo Importer.command
+Photo Importer v3.4.command
 ```
 
 Then:
@@ -82,13 +82,13 @@ Failed files are not archived. Future scans skip `archive/`.
 If macOS says it cannot verify the script, remove the quarantine flag:
 
 ```sh
-xattr -d com.apple.quarantine ~/Desktop/Photo\ Importer.command
+xattr -d com.apple.quarantine ~/Desktop/Photo\ Importer\ v3.4.command
 ```
 
 If the file is elsewhere:
 
 ```sh
-xattr -d com.apple.quarantine "/path/to/Photo Importer.command"
+xattr -d com.apple.quarantine "/path/to/Photo Importer v3.4.command"
 ```
 
 You can also right-click the file in Finder, choose `Open`, then confirm.
@@ -107,3 +107,13 @@ Install ExifTool:
 ```sh
 brew install exiftool
 ```
+
+## Version History
+
+### v3.4
+
+- Fix first-run SQLite initialization on some exFAT external drives.
+
+### v3.3
+
+- Add Finder selection, ExifTool date reading, dated import folders, SQLite repeat checks, verified copy, import log, progress display, and optional source archive.
