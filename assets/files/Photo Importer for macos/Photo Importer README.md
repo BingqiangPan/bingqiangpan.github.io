@@ -62,6 +62,10 @@ Photos/
 
 Do not edit `.photo-importer/photo-index.sqlite3` manually.
 
+## Repeat Detection
+
+Photo Importer mainly tracks files it has imported itself. Files copied manually into the target before using Photo Importer may be imported again because they are not in the SQLite index.
+
 ## Archive Meaning
 
 `source/archive/` means:
@@ -105,6 +109,7 @@ You can also right-click the file in Finder, choose `Open`, then confirm.
 - Keep source and target separate; the script blocks same or nested folders.
 - Do not run while cloud sync is half-finished.
 - Keep a separate backup of the photo library.
+- Files copied manually before using Photo Importer may be imported again because they are not in the SQLite index.
 - Treat this as an importer, not a permanent verification system.
 
 ## Requirement
