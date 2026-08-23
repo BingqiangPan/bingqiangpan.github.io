@@ -1,7 +1,7 @@
 ---
 title: 我如何理解 1998 香港金融保卫战
 author: B. Pan
-date: 2026-08-24 01:00:00 +0200
+date: 2026-08-24 00:50:00 +0200
 categories: [Notes]
 tags: [Finance, Currency, Hong Kong]
 typora-root-url: ..
