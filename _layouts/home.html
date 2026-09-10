@@ -3,7 +3,7 @@ layout: default
 refactor: true
 ---
 {% include welcom.html %}
-
+{% include cache-cleanup.html %}
 {% include lang.html %}
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
