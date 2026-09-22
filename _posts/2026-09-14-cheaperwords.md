@@ -1,5 +1,5 @@
 ---
-title: 文字变得廉价之后
+title: 当文字变得廉价
 author: B. Pan
 date: 2026-09-14 00:30:00 +0200
 categories: [Essays]
