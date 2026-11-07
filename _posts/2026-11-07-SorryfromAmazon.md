@@ -1,5 +1,5 @@
 ---
-title: "We’re sorry for the delay"
+title: '“We’re sorry for the delay”'
 author: B. Pan
 date: 2026-11-07 00:30:00 +0100
 categories: [Essays]
